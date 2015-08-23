@@ -10,9 +10,10 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter a Number");
-            Double A = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine(A * A);
+            double num;
+            Console.Write("Enter a Number: ");
+            num= Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine(num * num);
         }
     }
 }

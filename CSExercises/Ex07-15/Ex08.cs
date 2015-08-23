@@ -10,12 +10,12 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            Double C;
-            Double F;
-            Console.WriteLine("Enter the Temp in Centigrade");
-            C = Convert.ToDouble(Console.ReadLine());
-            F = 1.8 * C + 32;
-            Console.WriteLine(F);      
+            Double TemperatureC;
+            Double TemperatureF;
+            Console.Write("Enter the Temp in Centigrade: ");
+            TemperatureC = Convert.ToDouble(Console.ReadLine());
+            TemperatureF = 1.8 * TemperatureC + 32;
+            Console.WriteLine("The Temp in Fahrenheit is: "+TemperatureF);      
         }
     }
 }

@@ -11,13 +11,15 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             int Salary;
-            int House;
-            int Transport;
-            Console.WriteLine("Eneter the Amount of Salary: ");
+            int HouseAllowance;
+            int TransportAllowance;
+            double TotalIncome;
+            Console.Write("Eneter the Amount of Salary: ");
             Salary = Convert.ToInt32(Console.ReadLine());
-            House = (Salary / 100) * 10;
-            Transport = (Salary / 100) * 3;
-            Console.WriteLine(Salary + House + Transport);
+            HouseAllowance = (Salary / 100) * 10;
+            TransportAllowance = (Salary / 100) * 3;
+            TotalIncome = Salary + HouseAllowance + TransportAllowance;
+            Console.WriteLine("The total income is {0:C}",TotalIncome);
         }
     }
 }

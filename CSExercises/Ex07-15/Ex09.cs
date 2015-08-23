@@ -10,16 +10,12 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            Double X;
-            Double Y;
-            Console.WriteLine("Enter a value of X");
-            X = Convert.ToDouble(Console.ReadLine());
-            Y = X * X * 2 - 4 * X + 3;
-            Console.WriteLine(Y);
-
-
-
-
+            Double Inputnum;
+            Double Outputnum;
+            Console.Write("Pls enter a number: ");
+            Inputnum = Convert.ToDouble(Console.ReadLine());
+            Outputnum = Inputnum * Inputnum * 2 - 4 * Inputnum + 3;
+            Console.WriteLine(Outputnum);
         }
     }
 }

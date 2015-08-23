@@ -10,12 +10,14 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Pls Enter the distance you've traveled");
-            Double FixedCharge = 2.4;
-            Double DistanceTraveld = 0.4 * Convert.ToDouble(Console.ReadLine());
-            Double TotalChagrge = FixedCharge + DistanceTraveld;
-            Console.WriteLine("The total Charge is ${0:0.00}" ,TotalChagrge);
-            Console.ReadLine();
+            double DistanceTraveld;
+            double TotalCharge;
+            double RoundUpTotalCharge;
+            Console.Write("Pls enter the distance you've traveled: ");
+            DistanceTraveld = Convert.ToDouble(Console.ReadLine());
+            TotalCharge = 2.4 + DistanceTraveld*0.4;
+            RoundUpTotalCharge = Math.Round(TotalCharge, 1);
+            Console.WriteLine("The total Charge is: ${0:0.00}",RoundUpTotalCharge);
         }
     }
 }

@@ -10,17 +10,14 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Pls enter the value for a b and c");
-            double a = Convert.ToDouble(Console.ReadLine());
-            double b = Convert.ToDouble(Console.ReadLine());
-            double c = Convert.ToDouble(Console.ReadLine());
-            double s = (a + b + c) / 2;
-            Console.WriteLine("the value you've entered for a b and c is {0},{1},{2}", a, b, c);
-            double area = Math.Sqrt(s*(s - a)*(s - b)*(s - c) );
-            Console.WriteLine("the Area is" + area);
-            Console.ReadLine();
-
-
+            double LengthA, LengthB, LengthC,Area,S;
+            Console.WriteLine("Pls enter the lenths for the triangle: ");
+            Console.WriteLine("The Lenth entered for side A is: {0} ", LengthA = Convert.ToDouble(Console.ReadLine()));
+            Console.WriteLine("The Lenth entered for side B is: {0} ", LengthB = Convert.ToDouble(Console.ReadLine()));
+            Console.WriteLine("The Lenth entered for side C is: {0} ", LengthC = Convert.ToDouble(Console.ReadLine()));
+            S = (LengthA + LengthB + LengthC) / 2;
+            Area= Math.Sqrt(S*(S - LengthA)*(S - LengthB)*(S - LengthC) );
+            Console.WriteLine("the Area is: " + Area);
         }
     }
 }

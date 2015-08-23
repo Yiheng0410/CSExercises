@@ -10,7 +10,7 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             double distance, charge1, charge2, charge3;
-            Console.Write("Enter the distance you've traveled:");
+            Console.Write("Enter the distance you've traveled: ");
             distance = Convert.ToDouble(Console.ReadLine());
             distance = Math.Ceiling(distance * 10) / 10;
             charge1 = 2.40;
